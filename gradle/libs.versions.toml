@@ -1,0 +1,26 @@
+[versions]
+junitJunit = "4.13.2"
+junit = "5.9.2"
+kotlin = "2.0.0"
+androidGradlePlugin = "8.5.1"
+loggingInterceptor = "4.11.0"
+okhttp3 = "4.12.0"
+jsonSimple = "1.1.1"
+androidxAnnotation = "1.8.1"
+androidxAppCompat = { strictly = "1.7.0" }
+
+
+[libraries]
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+jsonSimple = { group = "com.googlecode.json-simple", name = "json-simple", version.ref = "jsonSimple" }
+com-squareup-okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
+okHttpInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor" , version.ref = "loggingInterceptor"}
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "androidxAnnotation" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
